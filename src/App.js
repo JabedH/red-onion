@@ -6,8 +6,8 @@ import Search from "./Components/Search/Search";
 import FoodMenu from "./Components/FoodMenu/FoodMenu/FoodMenu";
 import { Route, Routes } from "react-router-dom";
 import Breakfast from "./Components/FoodMenu/Breakfast/Breakfast";
-import Lunch from "./Components/FoodMenu/Lunch.js/Lunch";
 import Dinner from "./Components/FoodMenu/Dinner/Dinner";
+import Lunch from "./Components/FoodMenu/Lunch.js/Lunch";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <FoodMenu />
       <Routes>
         <Route path="Breakfast" element={<Breakfast />} />
-        <Route path="Lunch " element={<Lunch />} />
+        <Route path="Lunch" element={<Lunch />} />
         <Route path="Dinner" element={<Dinner />} />
       </Routes>
     </div>
