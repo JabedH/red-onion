@@ -8,17 +8,23 @@ import { Route, Routes } from "react-router-dom";
 import Breakfast from "./Components/FoodMenu/Breakfast/Breakfast";
 import Dinner from "./Components/FoodMenu/Dinner/Dinner";
 import Lunch from "./Components/FoodMenu/Lunch.js/Lunch";
+import Login from "./Components/Login/Login";
+import Cart from "./Components/Cart/Cart";
+import Home from "./Components/Home/Home";
 
 function App() {
   return (
     <div className="App">
       <NaVbar />
-      <Search />
-      <FoodMenu />
+
       <Routes>
-        <Route path="Breakfast" element={<Breakfast />} />
-        <Route path="Lunch" element={<Lunch />} />
-        <Route path="Dinner" element={<Dinner />} />
+        <Route path="/" element={<Home />}>
+          <Route path="Breakfast" element={<Breakfast />} />
+          <Route path="Lunch" element={<Lunch />} />
+          <Route path="Dinner" element={<Dinner />} />
+        </Route>
+        <Route path="Login" element={<Login />}></Route>
+        <Route path="Cart" element={<Cart />}></Route>
       </Routes>
     </div>
   );

@@ -1,0 +1,26 @@
+*:focus {
+  outline: none;
+}
+.btn-color {
+  background-color: #f91944;
+  border: none;
+}
+.btn-color:hover {
+  background-color: #ee3b5f;
+}
+.btn-color {
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+.text-start {
+  margin-top: 80px;
+}
+.text-start input {
+  background-color: rgb(235, 235, 235);
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
+}

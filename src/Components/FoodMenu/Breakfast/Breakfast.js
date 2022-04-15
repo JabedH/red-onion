@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Lunch from "../Lunch.js/Lunch";
 import "./Breakfast.css";
 
 const Breakfast = () => {
@@ -20,7 +19,6 @@ const Breakfast = () => {
         </div>
       ))}
       <img src="" alt="" />
-      <h1>breakfast</h1>
     </div>
   );
 };
