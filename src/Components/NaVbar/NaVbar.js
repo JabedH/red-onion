@@ -4,12 +4,11 @@ import logo from "../../img/logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Login from "../Login/Login";
 
 const NaVbar = () => {
   return (
     <div className="d-flex justify-content-between navbar container">
-      <img src={logo} alt="" />
+      <img as={Link} to="/" src={logo} alt="" />
       <div className=" navbar-item">
         {/* <button type="button">LogIn</button> */}
         {/* <button type="button">Sign up</button> */}
@@ -17,6 +16,7 @@ const NaVbar = () => {
           <FontAwesomeIcon icon={faCartShopping} />{" "}
         </Link>
         <Link to="Login">LogIn</Link>
+        {/* <Link to="SingUp">SingUp</Link> */}
       </div>
     </div>
   );

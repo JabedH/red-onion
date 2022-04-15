@@ -1,8 +1,13 @@
 import React from "react";
 import { Button, Form } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 import "./SingUp.css";
 
 const SingUp = () => {
+  const navigate = useNavigate();
+  const navigateLogin = () => {
+    navigate("/login");
+  };
   return (
     <div>
       <Form className="w-25 mx-auto text-start">
@@ -17,7 +22,15 @@ const SingUp = () => {
         <button className="w-100 btn-color mt-3" type="submit">
           Submit
         </button>
-        <p className="text-center mt-3">Already you have an account?</p>
+        <div className="mt-2 text-center ">
+          <Link
+            onClick={navigateLogin}
+            to="/login"
+            className="text-decoration-none  "
+          >
+            Already you have an account?
+          </Link>
+        </div>
       </Form>
     </div>
   );
