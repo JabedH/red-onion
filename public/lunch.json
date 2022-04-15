@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Healthy Meal Plan",
+    "description": "How we dream about our future",
+    "price": "$7.89",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch1.png"
+  },
+  {
+    "id": 2,
+    "name": "Fried Chicken",
+    "description": "How we dream about our future",
+    "price": "$12.99",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch2.png"
+  },
+  {
+    "id": 3,
+    "name": "Tarragon-rubbed-Salmon",
+    "description": "How we dream about our future",
+    "price": "$11.5",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch3.png"
+  },
+  {
+    "id": 4,
+    "name": "Indian Lunch",
+    "description": "How we dream about our future",
+    "price": "$14.19",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch4.png"
+  },
+  {
+    "id": 5,
+    "name": "Beef Steak",
+    "description": "How we dream about our future",
+    "price": "$16.7",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch5.png"
+  },
+  {
+    "id": 6,
+    "name": "Honey-Soy-Glazed Salmon with Peppers",
+    "description": "How we dream about our future",
+    "price": "$4.99",
+    "img": "https://raw.githubusercontent.com/JabedH/Dinner-Img/main/lunch/lunch6.png"
+  }
+]

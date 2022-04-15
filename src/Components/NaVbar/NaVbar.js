@@ -11,7 +11,7 @@ const NaVbar = () => {
       <div className=" navbar-item">
         <FontAwesomeIcon icon={faCartShopping} />
         <button type="button">LogIn</button>
-        <button type="butyon">Sign up</button>
+        <button type="button">Sign up</button>
       </div>
     </div>
   );

@@ -1,0 +1,25 @@
+.breakfast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.breakfast img {
+  width: 80%;
+  padding: 15px;
+}
+.breakfast-item {
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.breakfast-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.breakfast-item h1 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.breakfast-item h5 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
