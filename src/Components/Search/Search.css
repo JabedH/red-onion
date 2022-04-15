@@ -4,29 +4,41 @@
 .search {
   position: relative;
 }
-.food {
+.food-title {
   position: absolute;
-  top: 40%;
-  left: 30%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+.food-title h2 {
+  font-size: 40px;
+}
+.search-food {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-food {
+  display: flex;
+  align-items: center;
+}
 .food input {
   border: none;
   border-radius: 20px;
-  width: 350px;
+  width: 380px;
   height: 40px;
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 20px;
-  margin-top: 20px;
 }
 *:focus {
   outline: none;
 }
 .food button {
   border: none;
-  border-radius: 20px;
-  margin-left: -30px;
-  width: 90px;
+  border-radius: 30px;
+  margin-left: -33px;
+  width: 120px;
   height: 40px;
   background-color: white;
   background-color: #f91944;

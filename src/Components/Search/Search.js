@@ -7,7 +7,9 @@ const Search = () => {
     <div className="search">
       <img src={bg} alt="" />
       <div className="food">
-        <h2>Best Food Waiting for your belly</h2>
+        <div className="food-title">
+          <h2>Best Food Waiting for your belly</h2>
+        </div>
         <div className="search-food">
           <input placeholder="search your foods" type="text" />
           <button>Search</button>
