@@ -1,0 +1,34 @@
+.search img {
+  width: 100%;
+}
+.search {
+  position: relative;
+}
+.food {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+
+.food input {
+  border: none;
+  border-radius: 20px;
+  width: 350px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+*:focus {
+  outline: none;
+}
+.food button {
+  border: none;
+  border-radius: 20px;
+  margin-left: -30px;
+  width: 90px;
+  height: 40px;
+  background-color: white;
+  background-color: #f91944;
+  color: white;
+}

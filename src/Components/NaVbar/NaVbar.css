@@ -1,0 +1,23 @@
+.navbar img {
+  width: 12%;
+}
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.navbar-item button {
+  border: 0;
+  color: white;
+  font-weight: 500;
+  margin-left: 30px;
+  padding: 8px 20px;
+  background-color: white;
+  background-color: #f91944;
+  border-radius: 30px;
+  font-size: 15px;
+  top: 0;
+}
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
