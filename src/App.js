@@ -15,11 +15,13 @@ function App() {
   return (
     <div className="App">
       <NaVbar />
-      <Home />
       <Routes>
-        <Route path="/Breakfast" element={<Breakfast />} />
-        <Route path="/Lunch" element={<Lunch />} />
-        <Route path="/Dinner" element={<Dinner />} />
+        <Route path="/" element={<Home></Home>}>
+          <Route index path="/Breakfast" element={<Breakfast />} />
+          <Route index element={<Breakfast />} />
+          <Route path="/Lunch" element={<Lunch />} />
+          <Route path="/Dinner" element={<Dinner />} />
+        </Route>
         <Route path="/Login" element={<Login />}></Route>
         <Route path="/SingUp" element={<SingUp />}></Route>
         <Route path="/Cart" element={<Cart />}></Route>

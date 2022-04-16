@@ -4,8 +4,16 @@ import logo from "../../img/logo2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
+import { Button } from "bootstrap";
 
 const NaVbar = () => {
+  const [user] = useAuthState(auth);
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     <div className="d-flex justify-content-between navbar container">
       <img as={Link} to="/" src={logo} alt="" />
@@ -15,8 +23,11 @@ const NaVbar = () => {
         <Link to="Cart">
           <FontAwesomeIcon icon={faCartShopping} />{" "}
         </Link>
-        <Link to="Login">LogIn</Link>
-        {/* <Link to="SingUp">SingUp</Link> */}
+        {user ? (
+          <button onClick={handleSignOut}>Logout</button>
+        ) : (
+          <Link to="Login">LogIn</Link>
+        )}
       </div>
     </div>
   );
