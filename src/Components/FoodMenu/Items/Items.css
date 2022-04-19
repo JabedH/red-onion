@@ -1,0 +1,16 @@
+.breakfast-item {
+  position: relative;
+  height: 520px;
+}
+
+.cart-btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  background-color: #ed475f;
+  color: white;
+  padding: 10px;
+}

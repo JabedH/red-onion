@@ -7,3 +7,14 @@
   text-decoration: none;
   color: black;
 }
+.food-btn {
+  background-color: white;
+  background-color: #f91944;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+}
+.food-btn:hover {
+  background-color: #f72f57d3;
+}

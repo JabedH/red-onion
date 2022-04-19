@@ -14,6 +14,9 @@ const NaVbar = () => {
   const handleSignOut = () => {
     signOut(auth);
   };
+  const addToCart = () => {
+    console.log("i got it");
+  };
   return (
     <div className="d-flex justify-content-between navbar container">
       <img as={Link} to="/" src={logo} alt="" />
@@ -21,7 +24,8 @@ const NaVbar = () => {
         {/* <button type="button">LogIn</button> */}
         {/* <button type="button">Sign up</button> */}
         <Link to="Cart">
-          <FontAwesomeIcon icon={faCartShopping} />{" "}
+          <FontAwesomeIcon icon={faCartShopping} />
+          <sup className="power">0</sup>
         </Link>
         {user ? (
           <button onClick={handleSignOut}>Logout</button>

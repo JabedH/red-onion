@@ -10,6 +10,7 @@ import Login from "./Components/Login/Login";
 import Cart from "./Components/Cart/Cart";
 import Home from "./Components/Home/Home";
 import SingUp from "./Components/SingUp/SingUp";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <NaVbar />
       <Routes>
         <Route path="/" element={<Home></Home>}>
-          <Route index path="/Breakfast" element={<Breakfast />} />
+          <Route path="/Breakfast" element={<Breakfast />} />
           <Route index element={<Breakfast />} />
           <Route path="/Lunch" element={<Lunch />} />
           <Route path="/Dinner" element={<Dinner />} />
@@ -26,6 +27,7 @@ function App() {
         <Route path="/SingUp" element={<SingUp />}></Route>
         <Route path="/Cart" element={<Cart />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 }
